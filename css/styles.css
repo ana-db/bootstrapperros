@@ -4,7 +4,7 @@ nav {
 }
 
 main{
-    min-height: 75vh; /* damos una altura mínima para que el pie no aparezca pegado al main y se sitúe al final de la pantalla */
+    min-height: 80vh; /* damos una altura mínima para que el pie no aparezca pegado al main y se sitúe al final de la pantalla */
 }
 
 
@@ -33,6 +33,10 @@ h1 {
 
 
 /* FOOTER */
+footer {
+    min-height: 10vh;
+}
+
 footer a {
     color: white;
 }

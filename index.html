@@ -20,7 +20,7 @@
     </head>
 
 
-    <body>
+    <body> 
         <!-- navegación -->
         <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
             <div class="container"> <!-- lo metemos dentro de un container para que se centre el contenido -->
@@ -53,26 +53,30 @@
 
             <h1>Login</h1>
 
-            <!-- formulario login -->
-            <form class="formLogin" action="login" method="post">
-                <!-- email -->
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" class="form-control" id="email" required aria-describedby="emailHelp" placeholder="Escribe tu email">
-                    <small id="emailHelp" class="form-text text-muted">El email no será compartido.</small>
-                </div>
-                <!-- contraseña -->
-                <div class="form-group">
-                    <label for="contrasena">Contraseña</label>
-                    <input type="password" class="form-control" id="contrasena" required pattern=".{5,8}" placeholder="Contraseña (mín 5, máx 8)">
-                </div>
-                <!-- recordar: -->
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Recordar</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Acceder</button>
-            </form> <!-- fin login -->
+            <div class="row justify-content-center align-items-center"> <!-- para centrar el fomulario necesitamos que esté dentro de las clases row y col -->
+                <div class="col-6">
+                    <!-- formulario login -->
+                    <form class="formLogin" action="login" method="post">
+                        <!-- email -->
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" required aria-describedby="emailHelp" placeholder="Escribe tu email">
+                            <small id="emailHelp" class="form-text text-muted">El email no será compartido.</small>
+                        </div>
+                        <!-- contraseña -->
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena" required pattern=".{5,8}" placeholder="Contraseña (mín 5, máx 8)">
+                        </div>
+                        <!-- recordar: -->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordar</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Acceder</button>
+                    </form> <!-- fin login -->
+                </div> <!-- fin col -->
+            </div> <!-- fin row -->
 
         </main> <!-- fin main -->
 
