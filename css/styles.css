@@ -1,0 +1,84 @@
+/**
+    Nuestro fichero de CSS
+    Mobile First width < 576 px
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize; /*1a letra mayuscula*/
+}
+
+h1 {
+    color: teal;
+}
+
+main:before {
+    content: "Mobile First < 576";
+}
+
+/* .col, .col-sm */
+.row div[class^="col"] { /* selector de atributos para dar estilos a todos los div (dentro de row) que tengan una clase que comience por "col" */
+    border: 1px solid #333;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.card-header {
+    color: white;
+    background-color: #007bff;
+}
+
+.fa-github{ /*fontawesome github*/
+	color: white;
+	font-size: 1.5em;
+    text-decoration: none; /* quita la línea de subrayado del link */
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+footer li {
+    text-align: center;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    width: 70%;
+    margin: auto;
+	display:block;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    main:before{
+        content: "Small devices 576";
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    main:before{
+        content: "Medium devices 768";
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    main:before{
+        content: "Large devices 992";
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    main:before{
+        content: "Extra Large devices 1200";
+    }
+}
