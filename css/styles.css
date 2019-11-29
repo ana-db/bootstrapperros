@@ -29,11 +29,6 @@ h1 {
     background-color: #007bff;
 }
 
-.fa-github{ /*fontawesome github*/
-	color: white;
-	font-size: 1.5em;
-    text-decoration: none; /* quita la línea de subrayado del link */
-}
 
 
 
@@ -59,4 +54,12 @@ img {
     width: 70%;
     margin: auto;
 	display:block;
+}
+
+
+/* custom */
+.fa-github{ /*fontawesome github*/
+	color: white;
+	font-size: 1.5em;
+    text-decoration: none; /* quita la línea de subrayado del link */
 }

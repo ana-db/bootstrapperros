@@ -38,22 +38,23 @@
                         <a class="nav-link" href="html/tabla.html">Tabla<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="html/formulario.html">Añadir<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="html/formulario.html">Formulario registro<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="html/listado.html">Listado<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="html/listado.html">Ver listado<span class="sr-only">(current)</span></a>
                     </li>
                     </ul>
                 </div> <!-- cierre collapse navbar-collapse -->
             </div> <!-- cierre container -->
         </nav>
 
-
+        <!-- main -->
         <main class="container">   
 
             <h1>Login</h1>
 
-            <form action="login" method="post">
+            <!-- formulario login -->
+            <form class="formLogin" action="login" method="post">
                 <!-- email -->
                 <div class="form-group">
                     <label for="email">E-mail</label>
@@ -71,12 +72,12 @@
                     <label class="form-check-label" for="exampleCheck1">Recordar</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Acceder</button>
-            </form>
+            </form> <!-- fin login -->
 
-        </main>
+        </main> <!-- fin main -->
 
         
-                                        
+        <!-- footer -->                                
         <footer class="bg-primary text-white">
             <div class="container p-1 p-sm-3 clearfix"> <!-- p-4: padding, p-sm-3 padding para tamaño de dispositivo pequeño -->
                 <nav>
@@ -84,10 +85,10 @@
                         <!-- flex-column> ponemos los enlaces en columnas por defecto -->
                         <!-- flex-sm-row> los pasamos a filas cuando el dispositivo sea peque;o -->
                         <!-- justify-content-between> para justificar el contenido y que ocupe todo el ancho de la pantalla -->
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="html/index.html">Inicio</a></li>
-                        <li><a href="html/tabla.html">Ver listado</a></li>
-                        <li><a href="html/formulario.html">Añadir</a></li>
+                        <li><a href="index.html">Login</a></li>
+                        <li><a href="html/tabla.html">Tabla</a></li>
+                        <li><a href="html/formulario.html">Formulario registro</a></li>
+                        <li><a href="html/listado.html">Ver listado</a></li>
                     </ul>
                 </nav>
                 
@@ -99,11 +100,11 @@
             </div>
         </footer>
         
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     </body>
 </html>
