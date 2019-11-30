@@ -31,6 +31,13 @@ h1 {
     padding: 20px;
 }
 
+.rounded-circle {  /* fotos tabla */
+/*  display:block; 
+    margin:auto; */
+    width: 80px;
+    height: 80px;
+}
+
 .card-header {
     color: white;
     background-color: #007bff;
