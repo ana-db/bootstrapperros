@@ -48,7 +48,7 @@
         <!-- main -->
         <main class="container">   
 
-            <h1>Registro</h1>
+            <h1 class="my-3 text-center">Registro veterinario</h1>
 
             <div class="row justify-content-center align-items-center"> <!-- para centrar el fomulario necesitamos que esté dentro de las clases row y col -->
                 <div class="col-6">
@@ -57,17 +57,17 @@
                         <!-- nombre -->
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre de tu perro">
+                            <input type="text" class="form-control" id="nombre" autofocus required pattern="[a-zA-Z]{1,20}" placeholder="Nombre de tu perro">
                         </div>
                         <!-- raza -->
                         <div class="form-group">
                             <label for="raza">Raza</label>
-                            <input type="text" class="form-control" id="raza" placeholder="raza">
+                            <input type="text" class="form-control" id="raza" required pattern="[a-zA-Z]{1,30}" placeholder="raza">
                         </div>
                         <!-- Color -->
                         <div class="form-group">
                             <label for="color">Color</label>
-                            <input type="text" class="form-control" id="color" placeholder="color">
+                            <input type="text" class="form-control" id="color" required pattern="[a-zA-Z]{1,20}" placeholder="color">
                         </div>
                         <!-- Peso -->
                         <div class="form-group">
@@ -82,7 +82,7 @@
                         <!-- sexo -->
                         <div class="form-group">
                             <label for="sexo">Sexo:</label>
-                            <select name="sexo" id="sexo">
+                            <select name="sexo" id="sexo" required>
                                 <option value="h">Hembra</option>
                                 <option value="m">Macho</option>
                             </select>
@@ -90,7 +90,7 @@
                         <!-- esterilizado -->
                         <div class="form-group">
                             <label for="esterilizado">Esterilizado:</label>
-                            <select name="esterilizado" id="esterilizado">
+                            <select name="esterilizado" id="esterilizado" required>
                                 <option value="s">Sí</option>
                                 <option value="n">No</option>
                             </select>
@@ -122,6 +122,7 @@
                     <!-- siempre que hagamos que algo flote, el contenedor tiene que tener una clase CLEARFIX -->
                     Bootstrap4 &copy; 
                     <a class="fab fa-github" href="https://github.com/ana-db/https://github.com/ana-db/bootstrapperros" target=_blank></a> Ana Díez Bravo 2019  
+                    <a class="fas fa-paw"></a>
                 </div>  
             </div>
         </footer>
