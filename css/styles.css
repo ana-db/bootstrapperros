@@ -34,8 +34,8 @@ h1 {
 .rounded-circle {  /* fotos tabla */
 /*  display:block; 
     margin:auto; */
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .card-header {
@@ -81,4 +81,18 @@ img {
 	color: white;
 	font-size: 1.5em;
     text-decoration: none; /* quita la línea de subrayado del link */
+}
+
+
+.containerCards { /* no queremos que las cards de los perros salgan en 1 sola columna, sino en horizontal
+                y en tantas columnas como se necesite para que se distribuyan a lo ancho de la pantalla */
+    width: 80%;
+    margin: auto;
+    
+    /* popiedades para flexbox: */
+    display: flex; /*por defecto, su display era block, los hijos ocupaban todo el espacio del padre */
+    flex-direction: row; /* por defecto */
+    flex-wrap: wrap; /* por defecto acomoda todos los hijos sin desbordar */
+    justify-content: center; /*justificar el contenido */
+    
 }
