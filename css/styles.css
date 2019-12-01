@@ -1,10 +1,22 @@
-/* LAYOUTS */
-nav {
-    min-height: 10vh; /* ocupa el 10% del alto de la pantalla del dispositivo */
+/* 
+1- reset
+2- normalize
+3- etiquetas
+4- animaciones
+5- layouts
+6- clases
+7- custom
+8- media
+*/
+
+/* 3- etiquetas 
+---------------------*/
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize; /*1a letra mayuscula*/
 }
 
-main{
-    min-height: 80vh; /* damos una altura mínima para que el pie no aparezca pegado al main y se sitúe al final de la pantalla */
+h1 {
+    color: teal;
 }
 
 /* formato al texto del formulario: verde, correcto; rojo, incorrecto */
@@ -25,6 +37,41 @@ input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type=
     box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
 }
 
+
+/* 5- layouts 
+---------------------*/
+nav {
+    min-height: 10vh; /* ocupa el 10% del alto de la pantalla del dispositivo */
+}
+
+main{
+    min-height: 80vh; /* damos una altura mínima para que el pie no aparezca pegado al main y se sitúe al final de la pantalla */
+}
+
+/* FOOTER */
+footer {
+    min-height: 10vh;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+footer li {
+    text-align: center;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+/* 6- clases
+---------------------*/
 /* si queremos añadir 1 imagen de fondo en el login: */
 .bg-login-image {
     /* background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800"); */
@@ -32,17 +79,6 @@ input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type=
     background-position: right;
     background-size: cover;
   }
-
-
-h1, h2, h3, h4, h5, h6 {
-    text-transform: capitalize; /*1a letra mayuscula*/
-}
-
-h1 {
-    color: teal;
-}
-
-/* CLASES */
     
 /* .col-6 div{ /* para dar formato al contenido del formulario y de la tabla
     border-color: blue;
@@ -69,30 +105,6 @@ h1 {
 }
 
 
-
-
-
-/* FOOTER */
-footer {
-    min-height: 10vh;
-}
-
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: yellow;
-}
-
-footer li {
-    text-align: center;
-}
-
-ul, ol {
-    list-style: none;
-}
-
 /* IMÁGENES */
 img {
     width: 70%;
@@ -101,7 +113,7 @@ img {
 }
 
 
-/* custom */
+/* 7- custom */
 .fa-github, .fa-paw{ /* fontawesome */
 	color: white;
 	font-size: 1.5em;
