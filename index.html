@@ -46,18 +46,19 @@
         </nav>
 
         <!-- main -->
-        <main class="container">   
+        <main class="container"> <!-- clase para centrar el contenido -->
 
             <h1 class="my-3 text-center">Login Veterinario</h1>
 
             <div class="row justify-content-center align-items-center"> <!-- para centrar el fomulario necesitamos que esté dentro de las clases row y col -->
+                
                 <div class="col-6">
-                    <!-- formulario login -->
+                    <!-- inicio formulario login -->
                     <form class="formLogin" action="login" method="post">
                         <!-- email -->
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" required aria-describedby="emailHelp" placeholder="Escribe tu email">
+                            <input type="email" class="form-control" id="email" autofocus required aria-describedby="emailHelp" placeholder="Escribe tu email">
                             <small id="emailHelp" class="form-text text-muted">El email no será compartido.</small>
                         </div>
                         <!-- contraseña -->
@@ -70,9 +71,9 @@
                             <input type="checkbox" class="form-check-input" id="recuerdame">  
                             <label class="form-check-label" for="recuerdame">Recuerdame</label>                          
                         </div>
-                        <!-- <button type="submit" class="btn btn-primary">Acceder</button>  -->
-                        <a href="html/cards.html" class="btn btn-primary btn-user btn-block">Acceder al veterinario</a>
-                    </form> <!-- fin login -->
+                        <button type="submit" class="btn btn-primary">Acceder al veterinario</button>
+                        <!-- <a href="html/tabla.html" class="btn btn-primary btn-user btn-block">Acceder al veterinario</a> -->
+                    </form> <!-- fin formulario login -->
                 </div> <!-- fin col -->
             </div> <!-- fin row -->
 

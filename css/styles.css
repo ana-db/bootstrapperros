@@ -7,6 +7,30 @@ main{
     min-height: 80vh; /* damos una altura mínima para que el pie no aparezca pegado al main y se sitúe al final de la pantalla */
 }
 
+/* formato al texto del formulario: verde, correcto; rojo, incorrecto */
+input[type="text"]:valid, input[type="email"]:valid, input[type="url"]:valid, input[type="password"]:valid {
+    /* :focus --> para que las casillas no estén siempre marcadas en rojo sino sólo cuando el contenido está mal*/
+    color: #6e707e;
+    background-color: #fff;
+    border-color: rgba(73, 231, 59, 0.63);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem, rgba(73, 231, 59, 0.63);
+}
+
+input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type="url"]:focus:invalid, input[type="password"]:focus:invalid {
+    color: #e74a3b;
+    background-color: #fff;
+    border-color: rgba(231, 73, 59, 0.63);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
+}
+
+/* si quisiéramos añadir 1 imagen de fondo en el login */
+.bg-login-image {
+    background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+    background-position: center;
+    background-size: cover;
+  }
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,3 +120,4 @@ img {
     justify-content: center; /*justificar el contenido */
     
 }
+
