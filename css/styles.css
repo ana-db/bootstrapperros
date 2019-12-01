@@ -8,7 +8,7 @@ main{
 }
 
 /* formato al texto del formulario: verde, correcto; rojo, incorrecto */
-input[type="text"]:valid, input[type="email"]:valid, input[type="url"]:valid, input[type="password"]:valid {
+input[type="text"]:valid, input[type="email"]:valid, input[type="url"]:valid, input[type="password"]:valid, input[type="number"]:valid {
     /* :focus --> para que las casillas no estén siempre marcadas en rojo sino sólo cuando el contenido está mal*/
     color: #6e707e;
     background-color: #fff;
@@ -17,7 +17,7 @@ input[type="text"]:valid, input[type="email"]:valid, input[type="url"]:valid, in
     box-shadow: 0 0 0 0.2rem, rgba(73, 231, 59, 0.63);
 }
 
-input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type="url"]:focus:invalid, input[type="password"]:focus:invalid {
+input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type="url"]:focus:invalid, input[type="password"]:focus:invalid, input[type="number"]:focus:invalid {
     color: #e74a3b;
     background-color: #fff;
     border-color: rgba(231, 73, 59, 0.63);
