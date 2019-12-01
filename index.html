@@ -52,30 +52,56 @@
 
             <div class="row justify-content-center align-items-center"> <!-- para centrar el fomulario necesitamos que esté dentro de las clases row y col -->
                 
-                <div class="col-6">
-                    <!-- inicio formulario login -->
-                    <form class="formLogin" action="login" method="post">
-                        <!-- email -->
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" autofocus required aria-describedby="emailHelp" placeholder="Escribe tu email">
-                            <small id="emailHelp" class="form-text text-muted">El email no será compartido.</small>
-                        </div>
-                        <!-- contraseña -->
-                        <div class="form-group">
-                            <label for="contrasena">Contraseña</label>
-                            <input type="password" class="form-control" id="contrasena" required pattern=".{5,8}" placeholder="Contraseña (mín 5, máx 8)">
-                        </div>
-                        <!-- recordar: -->
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="recuerdame">  
-                            <label class="form-check-label" for="recuerdame">Recuerdame</label>                          
-                        </div>
-                        <button type="submit" class="btn btn-primary">Acceder al veterinario</button>
-                        <!-- <a href="html/tabla.html" class="btn btn-primary btn-user btn-block">Acceder al veterinario</a> -->
-                    </form> <!-- fin formulario login -->
-                </div> <!-- fin col -->
-            </div> <!-- fin row -->
+
+                <!-- con estos 7 divs, añadimos una imagen en la col 1 (izqda del formulario) y el login en la col 2 -->
+                <div class="col-xl-10 col-lg-12 col-md-9 o-hidden border-0 bg-white">
+                    <!-- o-hidden : clase asociada al dispaly para ocultar contenido (https://getbootstrap.com/docs/4.0/utilities/display/)
+                        border-0 : div sin borde, anulando el de styles.css
+                        bg-white : div con fondo blanco, anulando el gris de styles.css
+                    -->
+                    <div class="card o-hidden border-0 shadow-lg my-5">
+                        <div class="card-body p-0">
+                            <!-- Nested Row within Card Body -->
+                            <div class="row">
+                                <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> <!-- col 1 -->
+                                <div class="col-lg-6"> <!-- col 2, aquí escribimos el formulario -->
+                                    <div class="p-5">
+
+
+                                    <!-- <div class="col-6"> con la clase col-6, cada fila se divide en 2 columnas que ocupan 6 posiciones cada una. Comentamos este div para sustituirlo por los anteriores e incluir la imagen --> 
+                                    <!-- inicio formulario login -->
+                                        <form class="formLogin" action="login" method="post">
+                                            <!-- email -->
+                                            <div class="form-group">
+                                                <label for="email">E-mail</label>
+                                                <input type="email" class="form-control" id="email" autofocus required aria-describedby="emailHelp" placeholder="Escribe tu email">
+                                                <small id="emailHelp" class="form-text text-muted">El email no será compartido.</small>
+                                            </div>
+                                            <!-- contraseña -->
+                                            <div class="form-group">
+                                                <label for="contrasena">Contraseña</label>
+                                                <input type="password" class="form-control" id="contrasena" required pattern=".{5,8}" placeholder="Contraseña (mín 5, máx 8)">
+                                            </div>
+                                            <!-- recordar: -->
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="recuerdame">  
+                                                <label class="form-check-label" for="recuerdame">Recuerdame</label>                          
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Acceder al veterinario</button>
+                                            <!-- <a href="html/tabla.html" class="btn btn-primary btn-user btn-block">Acceder al veterinario</a> -->
+                                        </form> <!-- fin formulario login -->
+
+
+                                    </div> <!-- fin class="p-5" -->
+                                </div> <!-- fin col-lg-6 -->
+                            </div> <!-- fin class="row" -->
+                        </div> <!-- fin class="card-body p-0" -->
+                    </div> <!-- fin class="card o-hidden border-0 shadow-lg my-5" -->
+                </div> <!-- fin class="col-xl-10 col-lg-12 col-md-9" -->
+            
+            
+            </div> <!-- fin class="row justify-content-center align-items-center" -->
+
 
         </main> <!-- fin main -->
 

@@ -25,10 +25,11 @@ input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type=
     box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
 }
 
-/* si quisiéramos añadir 1 imagen de fondo en el login */
+/* si queremos añadir 1 imagen de fondo en el login: */
 .bg-login-image {
-    background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
-    background-position: center;
+    /* background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800"); */
+    background: url("https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-position: right;
     background-size: cover;
   }
 
